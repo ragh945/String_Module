@@ -143,8 +143,21 @@ It checks if the last character of the input string matches the specified charac
 **Usage**
 - To use the Stringmethods.py module, follow these steps:
 
+![image](https://github.com/ragh945/String_Module/assets/65483520/b49a0866-5ae8-48ca-84d1-95d717a5df92)
+
+
+
+
+
+
+
 **Save the Module:**
 - Save the code provided above in a file named Stringmethods.py.
+  ![image](https://github.com/ragh945/String_Module/assets/65483520/6bcecb3d-f7e6-4033-8d4b-5753c69abfe8)
+
+
+
+
 
 **Import the Module:**
 - In your Python script or interactive shell, import the module
