@@ -4,6 +4,8 @@ pipeline {
     environment {
         REPO = "https://github.com/ragh945/String_Module.git"
         FILE = "Stringfunctions.ipynb"
+        PYTHON = "D:\\anaconda3\\python.exe"
+        PIP = "D:\\anaconda3\\Scripts\\pip.exe"
     }
 
     stages {
@@ -16,8 +18,8 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 bat """
-                python -m pip install --upgrade pip
-                pip install notebook nbconvert
+                "${env.PYTHON}" -m pip install --upgrade pip
+                "${env.PIP}" install notebook nbconvert
                 """
             }
         }
@@ -25,7 +27,7 @@ pipeline {
         stage('Run Jupyter Notebook') {
             steps {
                 bat """
-                jupyter nbconvert --to notebook --execute "${env.FILE}" --output executed_notebook.ipynb
+                "${env.PYTHON}" -m jupyter nbconvert --to notebook --execute "${env.FILE}" --output executed_notebook.ipynb
                 """
             }
         }
