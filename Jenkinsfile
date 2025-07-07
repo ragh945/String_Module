@@ -4,8 +4,8 @@ pipeline {
     environment {
         REPO = "https://github.com/ragh945/String_Module.git"
         FILE = "Stringfunctions.ipynb"
-        PYTHON = "D:\\anaconda3\\python.exe"
-        PIP = "D:\\anaconda3\\Scripts\\pip.exe"
+        PYTHON = "D:\\Streamlit\\CONDA\\python.exe"
+        PIP = "D:\\Streamlit\\CONDA\\Scripts\\pip.exe"
     }
 
     stages {
