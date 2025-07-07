@@ -6,6 +6,7 @@ pipeline {
         FILE = "Stringfunctions.ipynb"
         PYTHON = "D:\\Streamlit\\CONDA\\python.exe"
         PIP = "D:\\Streamlit\\CONDA\\Scripts\\pip.exe"
+        JUPYTER_ALLOW_INSECURE_WRITES = "1"
     }
 
     stages {
